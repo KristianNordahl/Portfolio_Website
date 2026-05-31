@@ -72,4 +72,42 @@ header nav a {
 
 .contactButton a {
     color: white;
+    text-decoration: none;
+}
+
+.aboutButton {
+    width: 180px;
+    height: 75px;
+    border-radius:1.5rem;
+    background-color: transparent;
+    border: solid .2rem #306D29;
+    font-family: Lato;
+    font-size: 1.4rem;
+    ;
+    
+}
+
+.aboutButton a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 7rem;
+    font-family: Playfair Display;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+}
+
+main h4 {
+    font-size: 2rem;
+    color: grey;
+    margin-bottom: 7rem;
 }
