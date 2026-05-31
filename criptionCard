@@ -1,0 +1,29 @@
+[33mcommit 604c0408a722fa76e52843ade576cd80c7d547ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: KristianNordahl <kristian.nordahl@plyo.com>
+Date:   Sun May 31 10:13:36 2026 +0200
+
+    Added main title
+
+[33mcommit 37f2fabd2591de6aa974d314be00d4b075d7f61e[m
+Author: KristianNordahl <kristian.nordahl@plyo.com>
+Date:   Sun May 31 01:26:50 2026 +0200
+
+    Tweaked sizing of header elements
+
+[33mcommit 22d6ae2345d8756a078b99669a2616cf946e2016[m
+Author: KristianNordahl <kristian.nordahl@plyo.com>
+Date:   Sun May 31 01:23:12 2026 +0200
+
+    Added header styling
+
+[33mcommit b3e7b05fb282df04cf8b60915da1ac20b98d69b3[m
+Author: KristianNordahl <kristian.nordahl@plyo.com>
+Date:   Sun May 31 00:32:44 2026 +0200
+
+    Made header with logo, initials and nav items
+
+[33mcommit 35df7d4f6d4b4963c42c6bd4f521a109ef9c75dc[m
+Author: KristianNordahl <kristian.nordahl@plyo.com>
+Date:   Sun May 31 00:24:17 2026 +0200
+
+    Initial commit

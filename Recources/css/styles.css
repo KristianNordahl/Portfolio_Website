@@ -99,15 +99,47 @@ header nav a {
     flex-direction: column;
 }
 
-main h1 {
+main .titleContainer h1 {
     font-size: 7rem;
     font-family: Playfair Display;
     margin-top: 10rem;
     margin-bottom: 1rem;
 }
 
-main h4 {
+main .titleContainer h4 {
     font-size: 2rem;
     color: grey;
     margin-bottom: 7rem;
+}
+
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descriptionCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.descriptionCard h3 {
+    color: grey;
+}
+
+.portfolioCard {
+    margin: 3rem 3rem;
+}
+
+.portfolioContainer h1 {
+    font-size: 5rem;
+    margin-top: 14rem;
 }
