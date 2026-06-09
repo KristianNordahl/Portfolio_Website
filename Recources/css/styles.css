@@ -8,6 +8,11 @@ body {
     background-color: #FFFEF9;
 }
 
+h1 {
+    font-size: 7rem;
+    font-family: Playfair Display;
+}
+
 p {
     line-height: 1.5rem;
 }
@@ -18,7 +23,7 @@ header {
     align-items: center;
     background-color: #FBF5DD;
     margin: 0;
-    padding: 1.5rem 0;
+    padding: .5 0;
     width: 100%;
 }
 
@@ -36,8 +41,8 @@ header {
 }
 
 .logo {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background-image: url('../images/Logo.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -45,33 +50,20 @@ header {
     
 }
 
-.instagram {
+.instagram,
+.linkedIn,
+.x-logo {
     width: 32px;
     height: 32px;
-    background-image: url('../images/Instagram.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
-    
+    color: rgb(141, 141, 141); /* Changed from blue so it pops against the green */
 }
 
-.linkedIn {
+.contact-me-main .instagram,
+.contact-me-main .linkedIn,
+.contact-me-main .x-logo {
     width: 32px;
     height: 32px;
-    background-image: url('../images/LinkedIn.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
-    
-}
-.TwitterX {
-    width: 32px;
-    height: 32px;
-    background-image: url('../images/TwitterX.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
-    
+    color: white; /* Changed from blue so it pops against the green */
 }
 
 
@@ -80,12 +72,12 @@ header nav ul{
     justify-content: space-around;
     align-items: baseline;
     list-style: none;
-    width: 500px;
+    width: 450px;
     margin-right: 5rem;
 }
 header nav a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: black;
 
 }
@@ -114,6 +106,28 @@ header nav a {
     transition: scale .2s ease;
 }
 
+header .contactButton {
+    width: 158px;
+    height: 66px;
+    border-radius:1.4rem;
+    background-color: #306D29;
+    border: none;
+    font-family: Lato;
+    font-size: 1.4em;
+    transition: scale .2s ease;
+}
+
+header .contactButton a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    margin: -1em;
+    font-size: 1.2rem;
+}
+
 .contactButton:hover {
     scale: 1.1;
 }
@@ -126,7 +140,7 @@ header nav a {
     z-index: 1;
     padding: 1em;
     margin: -1em;
-    }
+}
 
 
 
@@ -432,4 +446,180 @@ footer nav a {
     .finalStatementsContainer {
     grid-template-columns: 400PX;
     }   
+}
+
+
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    
+}
+
+.contact-me-main h1 {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.contactInfoContainer h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: normal;
+}
+
+.contactInfoContainer h3 {
+    font-weight: 400;
+    color: rgb(223, 223, 223);
+    font-size: 1.5rem;
+    
+}
+
+.contactInfoContainer h4 {
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+
+    
+}
+
+.contactInfoContainer {
+    background-color: #306D29;
+    width: 500px;
+    height: 800px;
+    padding: 3rem 6rem 3rem 3rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+
+.contactInfoGridContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem 3rem;
+    margin-bottom: 4rem;
+    
+}
+.contactInfoContainer .social-media {
+    margin: 0
+}
+
+
+.phoneIcon {
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/bxs_phone-call.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
+ 
+}
+
+.mailIcon {
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/ic_sharp-email.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
+
+}
+
+.mapsPinIcon {
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/carbon_location-filled.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ensures the SVG scales nicely without cutting off */
+
+}
+
+
+.contactForm form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 4rem 5rem;
+    width: 800px;
+
+}
+
+.radioButtons, .message {
+    grid-column: 1 / -1;
+}
+
+.radioButtonItems {
+    display: flex;
+    flex-direction: row; /* Forces the 4 options to sit horizontally */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Container for each individual button + label pair */
+.radioGroup {
+    display: flex;
+    flex-direction: row; /* Forces the input and label to sit horizontally */
+    align-items: center;
+}
+
+.contactInput {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+
+}
+
+.contactInput input {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    padding-bottom: 0.5rem;
+    background-color: #FFFEF9;
+    border-bottom: 1px solid grey;
+}
+
+.submitButton {
+    margin-left: auto;
+}
+
+.submitButton input{
+
+    padding: 25px 70px;
+    border-radius:1.5rem;
+    background-color: #306D29;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: Lato;
+    font-size: 1.4em;
+    cursor: pointer;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: transform .2s ease;
+}
+
+
+.submitButton input:hover {
+    transform: scale(1.1) translateZ(0); 
+    
+}
+
+
+.submitButton input:active {
+    transform: scale(1) translateZ(0);
+}
+
+#error-message {
+    color: rgb(255, 74, 74);
 }
